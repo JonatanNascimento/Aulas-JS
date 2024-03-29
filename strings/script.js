@@ -1,3 +1,4 @@
+/*
 console.log("Um string literal pode ficar entre aspas duplas");
 console.log("Um string literal pode ficar entre aspas simples");
 console.log(`Um string literal pode ficar entre crases`);
@@ -26,3 +27,39 @@ console.log(`Tipo de ${num3}: ${typeof num3}`);
 
 const num4 = parseFloat("21.34", 10);
 console.log(`Tipo de ${num4}: ${typeof num4}`);
+*/
+
+// Aula 2
+
+const str = "Maria Silva  ";
+
+console.log(`const str = "Maria Silva "`);
+
+console.log(`toLowerCase: ${str.toLowerCase()}`);
+console.log(`toUpperCase: ${str.toUpperCase()}`);
+
+console.log(`charAt: ${str.charAt(3)}`);
+console.log(`charAt: ${str[2]}`);
+
+console.log(`replace: ${str.replace("i", "$")}`);
+console.log(`replace: ${str.replace(/i/g, "$")}`);
+// Exemplo uso replace
+const valor = 200.99;
+const novoValor = valor.toString().replace(".", ",");
+console.log(novoValor);
+
+console.log(`length: ${str.length}`);
+
+console.log(`indexOf: ${str.indexOf("i")}`);
+console.log(`lastIndexOf: ${str.lastIndexOf("i")}`);
+
+console.log(`substring: ${str.substring(3, 9)}`);
+// Exemplo uso substring
+const data = "14/10/2021";
+const mes = data.substring(3, 5);
+console.log(mes);
+// transformando para numero
+const mes2 = Number(data.substring(3, 5));
+console.log(mes2);
+
+console.log(`trim: ${str.trim()}`);
